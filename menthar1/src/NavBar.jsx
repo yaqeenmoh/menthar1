@@ -6,6 +6,7 @@ import {
 } from "mdbreact";
 import "bootstrap-css-only/css/bootstrap.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import path  from './icons/Path 35.svg' ;
 
 class NavBar extends Component {
   state = {
@@ -35,12 +36,13 @@ class NavBar extends Component {
         </MDBNav>
         </BrowserRouter>
         <img
-          src="https://mdbootstrap.com/img/Photos/Avatars/img%20(9).jpg"
+          src={path}
           alt=""
           width="50px"
           height="50px"
           className="rounded-circle "
-        />
+        >
+        </img>
 
 
 
@@ -58,7 +60,7 @@ class NavBar extends Component {
           </MDBDropdownMenu>
         </MDBDropdown>
         <MDBCol md="6" className="mt-3">
-          <MDBInput hint=" ابحث عن معلمين, دورات ,أوراق عمل  " type="text" className="white-text text-right primary-color-dark pr-4" containerClass="active-primary-color-dark active-primary-color-dark-2 mt-0 mb-3" />
+          <MDBInput hint=" ابحث عن معلمين, دورات ,أوراق عمل  " type="text"  className="white-text text-right primary-color-dark pr-4" containerClass="active-primary-color-dark active-primary-color-dark-2 mt-0 mb-3" />
         </MDBCol>
         <MDBNavbarNav right>
           <MDBNavbarBrand>

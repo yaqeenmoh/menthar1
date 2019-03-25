@@ -1,12 +1,12 @@
 import React from 'react'
 
 import { MDBTable, MDBTableBody, MDBTableHead,MDBContainer,MDBRow,MDBIcon, MDBCol } from 'mdbreact';
-// import playstore from './icone-play-store.png'
-// import appstore from './icon-app-store.png'
+import playstore from './icons/playstore.svg'
+import appstore from './icons/appstore.svg'
 const Footer = props => {
   return (
       <div>
-    <MDBTable className="pl-2 text-center unique-color-dark white-text"  borderless>
+    <MDBTable className="pl-2 text-center unique-color-dark white-text" borderless>
 
       <MDBTableHead>
         <tr>
@@ -48,13 +48,16 @@ const Footer = props => {
             <td> بنك الاسئلة</td>  
             
         </tr>
-        <tr>
-                {/* <td ><a href="#"><img className="m-2" src={playstore}></img></a> </td>
-                 <td><a href="#"> <img height="59px" width="200px" src={appstore}></img></a></td> */}
+        
                 <td>مدارس وجامعات</td>
                 <td> بنك الاسئلة</td>  
             
-        </tr>
+                <tr>
+               <td ><a href="#"><img className="m-2" src={playstore}></img></a> </td>
+               
+             
+                 <td><a href="#"> <img className="m-2" src={appstore}></img></a></td>
+                 </tr>
 
         <tr>
             <td>
@@ -73,6 +76,7 @@ const Footer = props => {
              </MDBRow>
            
             </div>
+            
         </tr>
       </MDBTableBody>
     </MDBTable>
