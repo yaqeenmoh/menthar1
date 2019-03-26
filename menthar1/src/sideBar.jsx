@@ -1,38 +1,76 @@
 import React, { Component } from "react";
 import { BrowserRouter } from 'react-router-dom'
-import {MDBNavItem,MDBNavLink,MDBNav,MDBRow,MDBIcon,MDBContainer,MDBCol,MDBCard } from 'mdbreact';
+import {MDBNavItem,MDBNavLink,MDBNav,MDBRow,MDBIcon,MDBContainer,MDBCol,MDBCard,MDBCardImage ,MDBCardBody} from 'mdbreact';
 import { Segment } from "semantic-ui-react";
 import groupIcon from './icons/return.svg';
-
+import conversation from './icons/conversation.svg';
+import telescope from './icons/telescope (2).svg';
+import Rectangle from './icons/Rectangle 6535.png';
+import Rectangle2 from './icons/Rectangle 6545.png';
+import icon1 from './icons/5e9f026d-dff4-4376-b34c-72befe06906c.jpg'
+import book from './icons/book.png';
 
 class SideBar extends Component {
 
 
   render() {
     return (
-        <div>
+        
+            <MDBCol className="p-4 ml-3 shadow-box-example z-depth-2 left-side-bar-container" size="3">
 <MDBContainer className="mb-3">
+
+<MDBCardImage className="img-fluid" src={Rectangle2} waves  />
 <div style={{float:"right", color:"#327BF9"}}> العودة إلى جو اكاديمي <img src={groupIcon} className=" m-1"></img></div>
-<MDBRow className="pl-1">
-    <MDBCol className="m-0 p-0">
-<MDBIcon icon="question-circle" size="3x" className="blue-text m-1"></MDBIcon>
-<p className="blue-text"> مفضلتي</p>
-</MDBCol>
-<MDBCol className="m-0 p-0">
-   <MDBIcon icon="question-circle" size="3x" className="blue-text m-1"></MDBIcon>
-   <p className="blue-text"> دوراتي</p>
-   </MDBCol>
+
+<table id="myTable" style={{width:"100%"}}>
+        <tbody>
+        <div>
+            <tr>
+               
+               
+                <td a href="#" width="40%"align="center">  <img className="width"    src={conversation}></img></td>
+           
+                </tr>
+                <p className="blue-text font" > شبابيك</p>
+            </div>
+            
+        </tbody>
+    </table>
+    <table id="myTable" style={{width:"100%"}}>
+        <tbody>
+        <div>
+   
+               
+               
+                <td a href="#" width="40%"align="center">  <img className="width"    src={telescope}></img></td>
+           
+             
+                <p className="blue-text font" > منظار</p>
+            </div>
+            
+        </tbody>
+    </table>
    <MDBCol className="m-0 p-0">
-   <MDBIcon icon="question-circle" size="3x" className="blue-text m-1"></MDBIcon>
-   <p className="blue-text"> جروباتي</p>
+   
    </MDBCol>
-   <MDBCol className="m-0 p-0">
-   <MDBIcon icon="question-circle" size="3x" className="blue-text m-1"></MDBIcon>
-   <p className="blue-text"> ملفاتي</p>
-   </MDBCol>
-</MDBRow>
+
+   <MDBCol> 
+     <a href="#!" className="rotate-btn" data-card="card-1" onClick={this.handleFlipping}>
     
+     <div
+   className="grey lighten-2 jumbotron">
+   <div style={{float:"right", color:"#327BF9"}}>
+ <a style={{width:"20%", textAlign:"right",marginTop:12}}>  <img src={book} className=" m-1"></img>  </a>
+    </div>
+    </div>
+              </a>
+             
+       
+        </MDBCol>
 </MDBContainer>
+
+
+
 
         
 
@@ -44,12 +82,13 @@ class SideBar extends Component {
     <table>
     <tbody>
     <tr>
-   <td style={{width:"20%"}}>  <MDBIcon far   size="2x" icon="arrow-alt-circle-left" />  </td>
+   <td style={{width:"20%"}}>   <td><a href="#"> <img  src={telescope}></img></a></td>
+    </td>
     
    
-    <td align="right" style={{width:"60%"}}>  دورات </td>
+   <td><a href="#"> <img height="59px" width="200px" src={telescope}></img></a></td>
    
-   <td align="right" style={{width:"20%"}}>  <MDBIcon icon="tv" size="2x" className="grey-text  m-1 ml-3"></MDBIcon>     </td>
+   <td align="right" style={{width:"20%"}}>     </td>
    </tr>
     </tbody>
     </table>
@@ -173,28 +212,8 @@ class SideBar extends Component {
 
 </BrowserRouter>
 
-<MDBContainer className="mt-4">
-<MDBRow className="pl-1">
-    <MDBCol className="m-0 p-0">
-<MDBIcon icon="question-circle" size="3x" className="grey-text m-1"></MDBIcon>
-<strong className="indigo-text"> متجر</strong>
 </MDBCol>
-<MDBCol className="m-0 p-0">
-   <MDBIcon icon="question-circle" size="3x" className="grey-text m-1"></MDBIcon>
-   <strong className="indigo-text"> بنك الأسئلة</strong>
-   </MDBCol>
-   <MDBCol className="m-0 p-0">
-   <MDBIcon icon="question-circle" size="3x" className="grey-text m-1"></MDBIcon>
-   <strong className="indigo-text"> استازي</strong>
-   </MDBCol>
-   <MDBCol className="m-0 p-0">
-   <MDBIcon icon="question-circle" size="3x" className="grey-text m-1"></MDBIcon>
-   <strong className="indigo-text"> نقاط البيع</strong>
-   </MDBCol>
-</MDBRow>
-    
-</MDBContainer>
-</div>
+
 
      
           

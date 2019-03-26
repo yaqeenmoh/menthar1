@@ -19,8 +19,8 @@ class App extends Component {
          
      
 <MDBRow className="w-100 text-center">
-             
-             <LeftSideBar></LeftSideBar>
+<SideBar></SideBar>
+             {/* <LeftSideBar></LeftSideBar> */}
    
              <MDBCol className="m-3">
                <Segment raised>
@@ -36,7 +36,7 @@ class App extends Component {
                
        </MDBRow>
        <MDBCol size="2" className="h-auto white shadow-box-example z-depth-3">
-            <SideBar></SideBar>
+      
           </MDBCol>
        <MDBRow>
        <MDBCol>
