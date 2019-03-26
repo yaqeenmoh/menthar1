@@ -9,6 +9,7 @@ import image1 from './icons/Screen-Shot-2017-12-05-at-15.40.31-860x375.svg';
 import image2 from './icons/drawing.svg';
 import { Segment, Tab, Label, Icon, Button } from 'semantic-ui-react';
 import SideBar from './sideBar';
+import GalleryCard from './card';
 
 
 class App extends Component {
@@ -19,6 +20,7 @@ class App extends Component {
          
      
 <MDBRow className="w-100 text-center">
+
 <SideBar></SideBar>
              {/* <LeftSideBar></LeftSideBar> */}
    
@@ -32,21 +34,54 @@ class App extends Component {
                </div>
                </div>
                </Segment>
+               
                </MDBCol>
                
        </MDBRow>
-       <MDBCol size="2" className="h-auto white shadow-box-example z-depth-3">
-      
-          </MDBCol>
-       <MDBRow>
+     
+       {/* <MDBRow>
        <MDBCol>
                 <div className="float-right w-auto">
-                  <span>أكثر التخصصات ظهوراً في نتائج البحث</span>
+                
+                  <span >أكثر التخصصات ظهوراً في نتائج البحث</span>
                   <img  src={image2}></img>
+                  <GalleryCard>
+                  </GalleryCard>
+                  
+                </div>
+                <div className="float-right w-auto">
+                
+                  <span >أكثر التخصصات ظهوراً في نتائج البحث</span>
+                  <img  src={image2}></img>
+                  <GalleryCard>
+                  </GalleryCard>
+                  
+                </div>
+                
+                
+              </MDBCol>
+            </MDBRow> */}
+
+
+
+            <MDBRow className="float-right w-auto">
+              <MDBCol>
+                <div className="float-right w-auto" >
+                <span >أكثر التخصصات ظهوراً في نتائج البحث</span>
+                
+                  <div className="p-1">   <GalleryCard>
+                  </GalleryCard></div>
+                  <div className="p-1">   <GalleryCard>
+                  </GalleryCard></div>
+                  <div className="p-1">   <GalleryCard>
+                  </GalleryCard></div>
+                 
+
                 </div>
               </MDBCol>
             </MDBRow>
            
+             
        <MDBRow  className="mt-4">
        
       <MDBCol size="12">

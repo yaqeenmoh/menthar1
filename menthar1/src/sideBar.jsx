@@ -18,9 +18,21 @@ class SideBar extends Component {
         
             <MDBCol className="p-4 ml-3 shadow-box-example z-depth-2 left-side-bar-container" size="3">
 <MDBContainer className="mb-3">
+<MDBCol> 
+<a href="#!" className="rotate-btn" data-card="card-1" onClick={this.handleFlipping}>
+    
+     <div
+   className="grey lighten-2 jumbotron">
+ 
+   <div style={{float:"right", color:"#327BF9"}}> العودة إلى جو اكاديمي <img src={groupIcon} className=" m-1"></img></div>
 
-<MDBCardImage className="img-fluid" src={Rectangle2} waves  />
-<div style={{float:"right", color:"#327BF9"}}> العودة إلى جو اكاديمي <img src={groupIcon} className=" m-1"></img></div>
+    </div>
+              </a>
+             
+       
+        </MDBCol>
+
+
 
 <table id="myTable" style={{width:"100%"}}>
         <tbody>
