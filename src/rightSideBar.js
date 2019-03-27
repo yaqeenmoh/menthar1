@@ -3,6 +3,8 @@ import React, { Component } from "react";
 // import Sidebar from 'react-sliding-sidemenu'
 import { SideNav, Nav } from 'react-sidenav'
 import item1 from './icons/drawing.svg';
+import groupIcon from './icons/return.svg';
+import GalleryCard2 from './card';
 
 
 
@@ -16,12 +18,19 @@ class RightSideBar extends Component{
 
 		<div className="sidemenu-right menu-right">
 		<br/>
-		<div style={{width:250 , height:50 ,backgroundColor:"#F8F8F8" , lineHeight:3}}>
+		<div className="row" style={{width:250 , height:50 ,backgroundColor:"#F8F8F8" , lineHeight:3}}>
+		<div className="col-md-2" >
+		<img src={groupIcon} className=" m-1"></img>
+		</div>
+		<div className="col-md-2" >
 				<p style={{color:"black"}}>العودة الى جو اكادمي</p>
 				</div>
+				
+				</div>
+				<GalleryCard2 data={{text:"ch"}}/>
            <SideNav className="slideNav"  defaultSelectedPath="1">
 		   
-            <Nav className="nav-item" id="1">الموسوعة
+            <Nav className="nav-item" id="1"  >الموسوعة
 			<Nav className="nav-item" className="nav-item" id="1_1">
 			
 		
