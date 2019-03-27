@@ -33,8 +33,12 @@ class RightSideBar extends Component{
 				</div>
 				</div>
 				<div className="row">
-				<GalleryCard2 data={{Imgurl :{conversation},text :"شبابيك"  }}/>
-				<GalleryCard2 data={{Imgurl :{telescope},text :"منظار"  }}/>
+				<div className="col-md-5" >
+				<GalleryCard2 data={{Imgurl :conversation,text :"شبابيك"  }}/>
+				</div>
+				<div className="col-md-5" >
+				<GalleryCard2 data={{Imgurl :telescope,text :"منظار"  }}/>
+				</div>
 				</div>
            <SideNav className="slideNav"  defaultSelectedPath="1">
 		   

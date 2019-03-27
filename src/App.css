@@ -108,11 +108,16 @@ color: #8d8e8e;
 
 
 
-  width: 144px;
-height: 115px;
+  width: 100px;
+height: 100px;
 border-radius: 10px;
 background: #034173;
 
+
+}
+.card-layout2 p{
+  text-align: center;
+  padding-top:10px;
 }
 .imageStyle{
 
