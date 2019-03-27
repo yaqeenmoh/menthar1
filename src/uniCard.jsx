@@ -1,17 +1,17 @@
 import React from 'react';
-import CardLayout2 from './CardLayout2';
+import CardLayout3 from './CardLayout3';
 import card1 from './icons/Rectangle 6036.svg'
 
 
-const GalleryCard2 = (d) => {
+const GalleryCard3 = (d) => {
 
 
 
 
   return (
-    <CardLayout2>
+    <CardLayout3>
 
-      <div className="card-layout2">
+      <div className="card-layout3">
 
 
          <p>{d.data.text}</p>
@@ -25,8 +25,8 @@ const GalleryCard2 = (d) => {
         <span className="jr-link card-link"><i className="zmdi zmdi-railway zmdi-hc-fw"/>Route</span>
         <span className="jr-link card-link"><i className="zmdi zmdi-money zmdi-hc-fw"/>Avarage Cost</span> */}
       </div>
-    </CardLayout2>
+    </CardLayout3>
   );
 };
 
-export default GalleryCard2;
+export default GalleryCard3;

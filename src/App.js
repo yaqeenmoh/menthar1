@@ -13,6 +13,7 @@ import GalleryCard from './card';
 import RightSideBar from './rightSideBar';
 import AliceCarousel from 'react-alice-carousel';
 import "react-alice-carousel/lib/alice-carousel.css";
+import GalleryCard3 from './uniCard';
 
 
 class App extends Component {
@@ -74,6 +75,57 @@ class App extends Component {
                 
               </MDBCol>
             </MDBRow> */}
+<MDBRow className="w-auto align-right">
+<MDBCol md="6"></MDBCol>
+
+<span style={{margin:20}}>أكثر الجامعات ظهوراً في نتائج البحث
+</span>
+<img  src={image2}></img>
+
+</MDBRow>
+<div class="block-line"></div>
+<div className="container">
+<MDBRow className="w-auto box-container">
+            
+{/* <AliceCarousel autoPlay={false} mouseDragEnabled> */}
+             
+             
+                <MDBCol md="2">
+                  
+                <GalleryCard3 data={{title:"الهندسة المدنية",subject:"23",readMore:"إقرأ المزيد"}}/>
+                  </MDBCol>
+                
+                  
+                  <MDBCol md="2">
+               
+                  <GalleryCard3 data={{title:"الهندسة المدنية ",subject:"25",readMore:"إقرأ المزيد"}}/>
+                
+                  </MDBCol>
+                  
+                  <MDBCol md="2">
+                 
+                  <GalleryCard3 data={{title:"الهندسة المدنية ",subject:"25",readMore:"إقرأ المزيد"}}/>
+                
+                  
+                  </MDBCol>
+               
+                  <MDBCol md="2">
+                 
+                  <GalleryCard data={{title:"الهندسة المدنية",subject:"25",readMore:"إقرأ المزيد"}}/>
+                 
+                 </MDBCol>
+
+     
+                 {/* </AliceCarousel> */}
+            </MDBRow>
+           
+            </div>
+             
+       <MDBRow  className="mt-4"></MDBRow>
+
+
+
+
 
 <MDBRow className="w-auto align-right">
 <MDBCol md="6"></MDBCol>

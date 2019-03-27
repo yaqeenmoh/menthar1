@@ -4,7 +4,9 @@ import React, { Component } from "react";
 import { SideNav, Nav } from 'react-sidenav'
 import item1 from './icons/drawing.svg';
 import groupIcon from './icons/return.svg';
-import GalleryCard2 from './card';
+import GalleryCard2 from './sideBarCard';
+import { MDBBtn, MDBContainer, MDBRow, MDBCol, MDBIcon, MDBCard, MDBCardHeader, MDBCardBody, MDBCardTitle, MDBCardText, MDBInput } from 'mdbreact';
+
 
 
 
@@ -27,7 +29,13 @@ class RightSideBar extends Component{
 				</div>
 				
 				</div>
+				
+				<MDBCol md="2">
+                 
 				<GalleryCard2 data={{text:"ch"}}/>
+				
+				</MDBCol>
+				
            <SideNav className="slideNav"  defaultSelectedPath="1">
 		   
             <Nav className="nav-item" id="1"  >الموسوعة
