@@ -48,6 +48,7 @@ border-radius: 20px;
 .sidemenu-right{
   position: absolute;
   right :0;
+
 }
 .menu-block {
   color: black;
@@ -65,7 +66,7 @@ background-color: #F8F8F8;
   -webkit-box-shadow: -8px -1px 5px 0px rgba(196,194,196,1);
 -moz-box-shadow: -8px -1px 5px 0px rgba(196,194,196,1);
 box-shadow: -8px -1px 5px 0px rgba(196,194,196,1);
-width:200px;
+width:230px;
 height:1000px
 }
 .block-line{
@@ -83,8 +84,6 @@ right:auto !important;
 left: 0;
 margin-left:10px;
 }
-<<<<<<< HEAD
-=======
 /* 
 .headSide{
   
@@ -115,4 +114,3 @@ border-radius: 10px;
 background: #034173;
 
 }
->>>>>>> a03b4b4b082d3769702c8bd7df6bb8a9b6e79fa7
