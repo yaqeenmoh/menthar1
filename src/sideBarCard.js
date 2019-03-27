@@ -14,8 +14,8 @@ const GalleryCard2 = (d) => {
       <div className="card-layout2">
 
 
-         <p>{d.data.text}</p>
-       
+         <p className="imageStyle">{d.data.text}</p>
+         <img src={d.data.Imgurl} className="ss" />
       
           
           

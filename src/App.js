@@ -49,7 +49,7 @@ class App extends Component {
                <div className="centered">هل تبحث عن تخصص معين ؟
                
               <label>هل تبحث عن تخصص معين ؟</label>
-          <MDBInput hint=" ابحث عن معلمين, دورات ,أوراق عمل  " type="text"  className="white-text text-right primary-color-dark pr-4" containerClass="active-primary-color-dark active-primary-color-dark-2 mt-0 mb-3" />
+          <MDBInput hint=" ابحث عن معلمين, دورات ,أوراق عمل  " type="text"  className="sty" />
        
                </div>
               
@@ -145,11 +145,35 @@ class App extends Component {
 
 
 
-
-
            
+          
             </div>
              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
        <MDBRow  className="mt-4">
        
       <MDBCol size="12">

@@ -51,12 +51,11 @@ border-radius: 20px;
 
 }
 .menu-block {
-  color: black;
-height: 50px;
-width:200px;
-padding: 0;
-margin: 0;
-background-color: #F8F8F8;
+  width: 329px;
+height: 5036.19px;
+background: #fff;
+box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.16);
+
 }
 .position{
   position: relative;
@@ -84,6 +83,7 @@ right:auto !important;
 left: 0;
 margin-left:10px;
 }
+
 /* 
 .headSide{
   
@@ -114,3 +114,24 @@ border-radius: 10px;
 background: #034173;
 
 }
+.imageStyle{
+
+  font-family: "Noto Kufi Arabic";
+font-weight: normal;
+font-size: 14px;
+text-align: right;
+color: #fff;
+
+}
+.ss{
+  width: 36.16px;
+height: 36.16px;
+background: transparent;
+
+}
+.sty{width: 1025px;
+  height: 82px;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0px 6px 22px rgba(0, 0, 0, 0.16);
+  }

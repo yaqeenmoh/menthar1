@@ -3,6 +3,7 @@ import CardLayout3 from './CardLayout3';
 import card1 from './icons/Rectangle 6036.svg'
 
 
+
 const GalleryCard3 = (d) => {
 
 
@@ -15,7 +16,7 @@ const GalleryCard3 = (d) => {
 
 
          <p>{d.data.text}</p>
-       
+         
       
           
           
