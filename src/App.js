@@ -102,26 +102,26 @@ class App extends Component {
              
                 <MDBCol md="2">
                   
-                <GalleryCard data={{title:"yaqeen",age:"23"}}/>
+                <GalleryCard data={{title:"الهندسة المدنية",subject:"23",readMore:"إقرأ المزيد"}}/>
                   </MDBCol>
                 
                   
                   <MDBCol md="2">
                
-                  <GalleryCard data={{title:"muath",age:"25"}}/>
+                  <GalleryCard data={{title:"الهندسة المدنية ",subject:"25",readMore:"إقرأ المزيد"}}/>
                 
                   </MDBCol>
                   
                   <MDBCol md="2">
                  
-                  <GalleryCard data={{title:"muath",age:"25"}}/>
+                  <GalleryCard data={{title:"الهندسة المدنية ",subject:"25",readMore:"إقرأ المزيد"}}/>
                 
                   
                   </MDBCol>
                
                   <MDBCol md="2">
                  
-                  <GalleryCard data={{title:"muath",age:"25"}}/>
+                  <GalleryCard data={{title:"الهندسة المدنية",subject:"25",readMore:"إقرأ المزيد"}}/>
                  
                  </MDBCol>
 

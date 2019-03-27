@@ -83,3 +83,36 @@ right:auto !important;
 left: 0;
 margin-left:10px;
 }
+<<<<<<< HEAD
+=======
+/* 
+.headSide{
+  
+   background-color:#F8F8F8 ;
+    line-height:3;
+    position:fixed;
+    width:100%;
+    padding:0px;
+} */
+.style1{
+
+  width: 84.41px;
+height: 25.39px;
+font-family: "Noto Kufi Arabic";
+font-weight: normal;
+font-size: 16px;
+text-align: right;
+color: #8d8e8e;
+
+}
+.card-layout2{
+
+
+
+  width: 144px;
+height: 115px;
+border-radius: 10px;
+background: #034173;
+
+}
+>>>>>>> a03b4b4b082d3769702c8bd7df6bb8a9b6e79fa7
