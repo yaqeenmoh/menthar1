@@ -11,7 +11,7 @@ const GalleryCard2 = (d) => {
   return (
     <CardLayout2>
 
-      <div className="card-layout">
+      <div className="card-layout2">
 
 
          <p>{d.data.text}</p>
