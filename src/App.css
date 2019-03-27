@@ -48,6 +48,7 @@ border-radius: 20px;
 .sidemenu-right{
   position: absolute;
   right :0;
+
 }
 .menu-block {
   color: black;
@@ -65,7 +66,7 @@ background-color: #F8F8F8;
   -webkit-box-shadow: -8px -1px 5px 0px rgba(196,194,196,1);
 -moz-box-shadow: -8px -1px 5px 0px rgba(196,194,196,1);
 box-shadow: -8px -1px 5px 0px rgba(196,194,196,1);
-width:200px;
+width:230px;
 height:1000px
 }
 .block-line{

@@ -3,7 +3,10 @@ import logo from './logo.svg';
 import './App.css';
 import NavBar from './NavBar';
 import Footer from './Footer';
-import { MDBBtn, MDBContainer, MDBRow, MDBCol, MDBIcon, MDBCard, MDBCardHeader, MDBCardBody, MDBCardTitle, MDBCardText, MDBInput } from 'mdbreact';
+import {
+  MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse, MDBDropdown,
+  MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem, MDBContainer, MDBIcon, MDBInput, MDBCol, MDBRow, MDBNav
+} from "mdbreact";
 import LeftSideBar from './LeftSideBar';
 import image1 from './icons/sky.png';
 import image2 from './icons/drawing.svg';
@@ -40,9 +43,17 @@ class App extends Component {
                <div className="container">
                <div class="row">
                <div class="col-md-8">
-               <img  width="850" height="100%" src={image1}></img>
-             
-               <div className="centered">هل تبحث عن تخصص معين ؟</div>
+               <img  width="850" height="100%" src={image1}/>
+               
+           
+               <div className="centered">هل تبحث عن تخصص معين ؟
+               
+              <label>هل تبحث عن تخصص معين ؟</label>
+          <MDBInput hint=" ابحث عن معلمين, دورات ,أوراق عمل  " type="text"  className="white-text text-right primary-color-dark pr-4" containerClass="active-primary-color-dark active-primary-color-dark-2 mt-0 mb-3" />
+       
+               </div>
+              
+              
                </div>
                </div>
                </div>
