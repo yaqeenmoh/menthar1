@@ -8,6 +8,7 @@
     "mdbreact": "^4.11.1",
     "react": "^16.8.5",
     "react-alice-carousel": "^1.13.3",
+    "react-background-image-loader": "0.0.5",
     "react-dom": "^16.8.5",
     "react-scripts": "2.1.8",
     "react-sidemenu": "^1.1.0",
