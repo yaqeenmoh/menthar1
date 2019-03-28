@@ -64,7 +64,7 @@ const ComingEvent = (d) => {
    <div class="col-md-12">
    <div class="row">
    <div class="col-md-10">
-   <p style={{color:"black" , fontSize:15 }}>عمان-مجمع الحسين للإعمال-زين زينك</p>
+   <p style={{color:"black" , fontSize:15 }}>عمان-مجمع الحسين للأعمال-زين زينك</p>
    </div>
    <div class="col-md-2">
    <img style={{marginRight:5}}  src={Pin}/>
