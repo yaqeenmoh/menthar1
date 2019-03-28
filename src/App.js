@@ -7,7 +7,7 @@ import {
   MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem, MDBContainer, MDBIcon, MDBInput, MDBCol, MDBRow, MDBNav
 } from "mdbreact";
 import LeftSideBar from './LeftSideBar';
-import image1 from './icons/Group8305.png';
+import image1 from './icons/sky_2.png';
 import image2 from './icons/drawing.svg';
 import UniImage from './icons/uni.svg';
 import { Segment, Tab, Label, Icon, Button } from 'semantic-ui-react';
@@ -28,7 +28,16 @@ import psut from './icons/logo-en.svg'
 import logo from './icons/logo.svg'
 import india from './icons/Group8309.png'
 import flag from './icons/flag.svg'
+import BackgroundImage from 'react-background-image-loader';
 
+ 
+
+
+var sectionStyle = {
+  width: "100%",
+  height: "400px",
+  backgroundImage: "url(" + { image1 } + ")"
+};
 
 const data={title:"الهندسة المدنية",desc:"يختص تخصص الهندسة المدنية بأمور المتعلقة برسم وبناء المباني والمنشآت، حيث يدرس في العديد من الجامعات ضمن كلية الهندسة والتصميم"}
 const uniCardData  = [
@@ -114,7 +123,12 @@ class App extends Component {
                <div className="container">
                <div class="row">
                <div class="col-md-8">
-               <img  width="850" height="100%" src={image1}/>
+               <BackgroundImage src={image1} >
+        <div className="image2">
+          {/* Some more markup */}
+        </div>
+     
+      </BackgroundImage>
                
            
                </div>
