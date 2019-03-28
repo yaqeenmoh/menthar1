@@ -5,7 +5,7 @@ import {
 import icon1 from './icons/Mask Group 26.png'
 import icon2 from './icons/Mask Group 27.png'
 import icon3 from './icons/Mask Group 28.png'
-import uniLogo from './icons/University_of_Jordan_Logo.svg.png'
+
 import groupIcon from './icons/return.svg';
 import Rectangle from './icons/Rectangle 6700.svg';
 import conversation from './icons/conversation.svg';

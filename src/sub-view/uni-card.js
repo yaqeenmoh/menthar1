@@ -1,23 +1,26 @@
 import React from 'react';
-import CardLayout from './CardLayout';
-import card1 from './icons/Rectangle 6036.svg'
-import backGround from './icons/box-background.png';
+import CardLayout from '../CardLayout';
+import {
+  
+     MDBCol, MDBRow
+  } from "mdbreact";
 
 
-const GalleryCard = (d) => {
+const UniCard = (d) => {
 
 
 
 
   return (
+    <MDBCol md="2" className="uni-col" >
     <CardLayout>
 
-      <div className="card-layout align-right">
+      <div className="align-right">
 
 
-         <p class="title">{d.data.title}</p>
-        <p class="desc">{d.data.desc}</p> 
-        <a style={{color:"#8D8E8E" , padding:10}} href="javascript:void(0);">إقرا المزيد</a>
+       <img src={d.data.imgUrl}/>
+       <p className="uni-title">{d.data.title}</p>
+       <pre className="uni-number">  <span>تخصص </span><span>{d.data.number}</span></pre>
       
           
           
@@ -28,7 +31,8 @@ const GalleryCard = (d) => {
         <span className="jr-link card-link"><i className="zmdi zmdi-money zmdi-hc-fw"/>Avarage Cost</span> */}
       </div>
     </CardLayout>
+    </MDBCol>
   );
 };
 
-export default GalleryCard;
+export default UniCard;

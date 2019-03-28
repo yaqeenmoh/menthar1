@@ -22,7 +22,7 @@ class RightSideBar extends Component{
 
 		<div className="sidemenu-right menu-right">
 		<br/>
-		<div className="row" style={{width:250 , overFlow:"hidden" , marginLeft:0 , height:50  ,backgroundColor:"#F8F8F8"  , lineHeight:3}}>
+		<div className="row" style={{width:250 , overFlow:"hidden" , marginLeft:0 , height:50  ,backgroundColor:"#F8F8F8"  , lineHeight:3 , marginBottom:15}}>
 		
 		<div className="col-md-3">
 		<img src={groupIcon} className="m-1"></img>
