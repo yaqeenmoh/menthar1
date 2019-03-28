@@ -66,7 +66,7 @@ const Footer = props => {
             <div> 
                  <MDBRow className="m-3">
                  <MDBCol >
-             <MDBIcon className="p-2" fab size="2x" icon="instagram" />
+             <img src=""></img>
              <MDBIcon  className="p-2" fab  size="2x" icon="facebook-f" />
              <MDBIcon  className="p-2" fab  size="2x" icon="twitter" />
              <MDBIcon  className="p-2" fab  size="2x" icon="youtube" />

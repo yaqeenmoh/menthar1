@@ -18,9 +18,9 @@ const UniCard = (d) => {
       <div className="align-right">
 
 
-       <img src={d.data.imgUrl}/>
-       <p className="uni-title">{d.data.title}</p>
-       <pre className="uni-number">  <span>تخصص </span><span>{d.data.number}</span></pre>
+       <img src={d.data.imgUrl} className="imgStyle"/>
+       <p className="uni-title titleStyle" className="titleStyle">{d.data.title}</p>
+       <pre className="uni-number"> {d.data.number} <span>تخصص </span><span></span></pre>
       
           
           

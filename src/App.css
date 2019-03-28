@@ -68,7 +68,7 @@ box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.16);
 -moz-box-shadow: -8px -1px 5px 0px rgba(196,194,196,1);
 box-shadow: -8px -1px 5px 0px rgba(196,194,196,1);
 width:230px;
-height:2000px;
+height:329%;
 }
 .block-line{
   height: 30px;
@@ -114,12 +114,13 @@ color: #8d8e8e;
 height: 100px;
 border-radius: 10px;
 background: #034173;
-
+padding-top: 18%;
 
 }
 .card-layout2 p{
   text-align: center;
   padding-top:10px;
+  
 }
 .imageStyle{
 
@@ -134,7 +135,8 @@ color: #fff;
   width: 36.16px;
 height: 36.16px;
 background: transparent;
-
+text-align: bottom;
+padding-top:7%;
 }
 .sty{width: 1025px;
   height: 82px;
@@ -176,4 +178,39 @@ background: transparent;
 .country-shadow{
   position: absolute;
 }
-  
+.imgStyle{
+  width: 168.37px;
+height: 54.3px;
+/* background: url(...); */
+
+}
+.titleStyle{
+  width: 141px;
+height: 39px;
+font-family: "Noto Kufi Arabic";
+font-weight: normal;
+font-size: 20px;
+text-align: right;
+color: #535962;
+
+}
+.col{    color: #fff;}
+
+
+.form-control{
+
+  width: 1042px;
+height: 50px;
+background: transparent;
+color: #fff;
+}
+.inputStyle{
+
+  font-family: "Noto Kufi Arabic";
+font-weight: normal;
+font-size: 15px;
+text-align: right;
+color: #fff;
+opacity: 0.6;
+
+}

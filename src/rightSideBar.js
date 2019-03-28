@@ -9,6 +9,7 @@ import { MDBBtn, MDBContainer, MDBRow, MDBCol, MDBIcon, MDBCard, MDBCardHeader, 
 import conversation from './icons/conversation.svg';
 import telescope from './icons/telescope (2).svg';
 import Ellipse from './icons/Ellipse 9.svg';
+import Group2 from './icons/Group 8312.svg';
 
 
 
@@ -42,7 +43,12 @@ class RightSideBar extends Component{
 				</div>
            <SideNav className="slideNav"  defaultSelectedPath="1">
 		   
-            <Nav className="nav-item" id="1"  >الموسوعة
+            
+			<Nav className="nav-item" id="1"  >الموسوعة
+			
+			
+			
+			
 			<Nav className="nav-item" className="nav-item" id="1_1">
 			
 		
@@ -61,7 +67,7 @@ class RightSideBar extends Component{
 			<Nav className="nav-item" id="2_3">فيديوهات</Nav>
 
 			</Nav>
-			<img src={Ellipse}></img>
+		
 			<Nav className="nav-item" id="3">الأدوات
 			<Nav className="nav-item" className="nav-item" id="3_1">
 			
@@ -71,6 +77,7 @@ class RightSideBar extends Component{
 			
 
 			</Nav>
+			
 		
         </SideNav>
            

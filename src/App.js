@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import NavBar from './NavBar';
 import Footer from './Footer';
@@ -8,7 +7,7 @@ import {
   MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem, MDBContainer, MDBIcon, MDBInput, MDBCol, MDBRow, MDBNav
 } from "mdbreact";
 import LeftSideBar from './LeftSideBar';
-import image1 from './icons/sky.png';
+import image1 from './icons/Group8305.png';
 import image2 from './icons/drawing.svg';
 import UniImage from './icons/uni.svg';
 import { Segment, Tab, Label, Icon, Button } from 'semantic-ui-react';
@@ -20,31 +19,44 @@ import "react-alice-carousel/lib/alice-carousel.css";
 import GalleryCard3 from './uniCard';
 import UniCard from './sub-view/uni-card';
 import UniJorLogo from './icons/uni.png';
-import Jordan from './icons/jordan2.png';
+import Jordan from './icons/Group_8304.png';
 import CountryCard from './sub-view/country-card';
+import just from './icons/just.svg'
+import poly from './icons/شعار_جامعة_البلقاء_التطبيقية.svg'
+import LOGO_FOOTER from './icons/LOGO_FOOTER.svg'
+import psut from './icons/logo-en.svg'
+import logo from './icons/logo.svg'
+import india from './icons/Group8309.png'
+import flag from './icons/flag.svg'
 
 
 const data={title:"الهندسة المدنية",desc:"يختص تخصص الهندسة المدنية بأمور المتعلقة برسم وبناء المباني والمنشآت، حيث يدرس في العديد من الجامعات ضمن كلية الهندسة والتصميم"}
 const uniCardData  = [
 {
-  imgUrl :UniJorLogo,
+  imgUrl :logo,
   title :"الجامعة الاردنية",
   number : 50
 },
 {
-  imgUrl :UniJorLogo,
-  title :"الجامعة الاردنية",
+  imgUrl :poly,
+  title :" جامعة البلقاء التطبيقية",
   number : 50
 },
 {
-  imgUrl :UniJorLogo,
-  title :"الجامعة الاردنية",
+  imgUrl :just,
+  title :" جامعة العلوم والتكنولوجيا",
   number : 50
 },
+// {
+//   imgUrl :LOGO_FOOTER,
+//   title :"الجامعة الهاشمية ",
+//   number : 50
+// },
 {
-  imgUrl :UniJorLogo,
-  title :"الجامعة الاردنية",
-  number : 50
+
+  imgUrl:psut,
+  title:"جامعة الأميرة سمية الخاصة",
+  number: 30
 }
 
 
@@ -52,10 +64,10 @@ const uniCardData  = [
 ];
 const countryItems = [
 
-  {url :Jordan},
-  {url :Jordan},
-  {url :Jordan},
-  {url :Jordan}
+  {url :india},
+  {url :india},
+  {url :india},
+  {url :india}
  
 ];
 class App extends Component {
@@ -86,6 +98,7 @@ class App extends Component {
 
  
     return (
+     
       <div className="grey lighten-5">
        <NavBar></NavBar>
      
@@ -93,8 +106,7 @@ class App extends Component {
      
        <MDBRow className="w-100 text-center position">
 <RightSideBar/>
-{/* <SideBar></SideBar> */}
-             {/* <LeftSideBar></LeftSideBar> */}
+
             
              <MDBCol className="m-3">
                <Segment raised>
@@ -105,14 +117,6 @@ class App extends Component {
                <img  width="850" height="100%" src={image1}/>
                
            
-               <div className="centered">هل تبحث عن تخصص معين ؟
-               
-              <label>هل تبحث عن تخصص معين ؟</label>
-          <MDBInput hint=" ابحث عن معلمين, دورات ,أوراق عمل  " type="text"  className="sty" />
-       
-               </div>
-              
-              
                </div>
                </div>
                </div>
@@ -123,36 +127,7 @@ class App extends Component {
                
        </MDBRow>
      
-       {/* <MDBRow>
-       <MDBCol>
-                <div className="float-right w-auto">
-                
-                  <span >أكثر التخصصات ظهوراً في نتائج البحث</span>
-                  <img  src={image2}></img>
-                  <GalleryCard>
-                  </GalleryCard>
-                  
-                </div>
-                <div className="float-right w-auto">
-                
-                  <span >أكثر التخصصات ظهوراً في نتائج البحث</span>
-                  <img  src={image2}></img>
-                  <GalleryCard>
-                  </GalleryCard>
-                  
-                </div>
-                
-                
-              </MDBCol>
-            </MDBRow> */}
-{/* <MDBRow className="w-auto align-right">
-<MDBCol md="6"></MDBCol>
-
-<span style={{margin:20}}>أكثر الجامعات ظهوراً في نتائج البحث
-</span>
-<img  src={image2}></img>
-
-</MDBRow> */}
+       
 <MDBRow className="w-auto align-right">
 <MDBCol md="6"></MDBCol>
 
@@ -230,7 +205,7 @@ class App extends Component {
 <MDBCol md="6"></MDBCol>
 
 <span style={{margin:20}}>أكثر البلدان ظهوراً في نتائج البحث</span>
-<img  src={UniImage}></img>
+<img  src={flag}></img>
 
 </MDBRow>
 <div class="block-line"></div>
@@ -265,6 +240,7 @@ class App extends Component {
 </MDBRow>
 
       </div>
+      
     );
   }
 }
