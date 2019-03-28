@@ -122,17 +122,20 @@ class App extends Component {
                <div className="rgba">
                <div className="container">
                <div class="row">
-               <div class="col-md-12">
-               <BackgroundImage src={image1} >
-        <div className="image2">
-          {/* Some more markup */}
-        </div>
-     
-      </BackgroundImage>
+             <div class="col-md-12" style={{height:450}}>
                
+               <img src={image1} style={{height:400}} />
+{/* <div style={{color:"black"}}>
+               hello
+               </div>  */}
+         
+       
+     
+        </div>
+        </div>
            
-               </div>
-               </div>
+           
+             
                </div>
                </div>
                </Segment>
