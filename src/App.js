@@ -122,7 +122,7 @@ class App extends Component {
                <div className="rgba">
                <div className="container">
                <div class="row">
-               <div class="col-md-8">
+               <div class="col-md-12">
                <BackgroundImage src={image1} >
         <div className="image2">
           {/* Some more markup */}

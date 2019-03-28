@@ -44,7 +44,7 @@ class RightSideBar extends Component{
            <SideNav className="slideNav"  defaultSelectedPath="1">
 		   
             
-			<Nav className="nav-item" id="1" style={{width:250 , overFlow:"hidden" , marginLeft:0 , height:50  ,backgroundColor:"#F8F8F8"  , lineHeight:3 , marginBottom:15}} >الموسوعة
+			<Nav className="nav-item" id="1"  >الموسوعة
 			
 			
 			
