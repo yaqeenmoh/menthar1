@@ -31,7 +31,15 @@ import flag from './icons/flag.svg'
 import BackgroundImage from 'react-background-image-loader';
 
  
-
+var label ={width: "462px",
+  height: "66px",
+  fontFamily: "Noto Kufi Arabic",
+  
+  fontsize: "35px",
+ 
+  color: "#fff",
+ 
+  }
 
 var sectionStyle = {
   width: "100%",
@@ -121,17 +129,22 @@ class App extends Component {
                <Segment raised>
                <div className="rgba">
                <div className="container">
-               <div class="row">
-             <div class="col-md-12" style={{height:450}}>
-               
+               <div className="row">
+               <div className="container">
+               <form>
+               <div >مرحباً بك في منظار </div>
+               <label for="site-search" style={label}>هل تبحث عن تخصص معين ؟</label>
+<input type="search" id="site-search" name="q"
+       aria-label="Search through site content"/>
+
+<button>Search</button>
+               <h1 className="title1">مرحباً بك في منظار   </h1>
+               <h2>منظار هي اول و أقوى برمجية تتيح للطالب معرفة التخصصات الجامعية في الأردن في كل من الجامعات الحكومية و الخاصة حسب معدل الطالب المتوقع أو الحقيقي وتمكنه من معرفة خيارات تقريبية للتخصصات الجامعية التي تناسبه من حيث المعدل الشخصية مكان السكن و التكلفة المادية ليتمكن في ذهنه من حصر التخصصات عند التقديم للقبول الموحد</h2>
+               <div className="centered">هل تبحث عن تخصص معين ؟</div>
+               </form>
                <img src={image1} style={{height:400}} />
-{/* <div style={{color:"black"}}>
-               hello
-               </div>  */}
-         
-       
-     
-        </div>
+               </div>
+             
         </div>
            
            

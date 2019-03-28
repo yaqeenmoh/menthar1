@@ -223,3 +223,13 @@ background-repeat: no-repeat;
 /* background: url(...); */
 
 }
+.title1
+{width: 301px;
+  height: 65px;
+  font-family: "Noto Kufi Arabic";
+  font-weight: normal;
+  font-size: 35px;
+  text-align: right;
+  color: #535962;
+  border: 0.7px solid #535962;
+  }
