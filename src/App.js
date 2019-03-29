@@ -30,6 +30,10 @@ import india from './icons/Group8309.png';
 import flag from './icons/flag.svg';
 import BackgroundImage from 'react-background-image-loader';
 import Icons from './icons';
+import Mnhaj from './sub-view/mnhaj';
+import Files from './sub-view/files';
+import Event from './sub-view/event';
+import ComingEvent from './sub-view/coming-events'
 
  
 
@@ -91,6 +95,17 @@ title:"بريطانيا"},
 title:"بريطانيا"},
  
 ];
+const mnjahItems = [
+  {title :"كورس كالكولاس",
+    instName : "د.سهى",
+    desc :"مدة الكورس 120 ساعة",
+  price:"30"}
+//   {title :"كورس كالكولاس",
+//   instName : "د.سهى",
+//   desc :"مدة الكورس 120 ساعة",
+// price:"30"},
+
+]
 class App extends Component {
 
 
@@ -111,6 +126,14 @@ class App extends Component {
       return countryItems.map((item)=>{
         return (
           <CountryCard data={item}/>
+        )
+        })
+    }
+
+    const DrawMnhaj  =()=>{
+      return mnjahItems.map((item)=>{
+        return (
+          <Mnhaj data={item}/>
         )
         })
     }
@@ -249,8 +272,64 @@ class App extends Component {
 
 
 
+<MDBRow className="align-right w">
 
 
+<span style={{margin:20}}>مناهج</span>
+<img  src={Icons.Mnhaj}></img>
+
+</MDBRow>
+<div class="block-line"></div>
+<div className="row">
+<div class="col-md-7">
+<MDBRow className="w-auto box-container country">
+<Files/>
+<Files/>
+<Files/>
+</MDBRow>
+</div>
+<div class="col-md-4">
+<MDBRow className="w-auto box-container country">
+<DrawMnhaj/>
+</MDBRow>
+</div>
+
+
+</div>
+
+<MDBRow className="align-right w">
+
+
+<span style={{margin:20}}>الفعاليات</span>
+<img  src={Icons.Calender}></img>
+
+</MDBRow>
+
+<div class="block-line"></div>
+<MDBRow style={{marginBottom:400}} className="w-auto">
+<Event/>
+<Event/>
+<Event/>
+
+</MDBRow>
+
+
+<MDBRow className="align-right w">
+
+
+<span style={{margin:20}}>الفعاليات القادمة</span>
+<img  src={Icons.Calender}></img>
+
+</MDBRow>
+
+<div class="block-line"></div>
+<MDBRow style={{marginBottom:200}} className="w-auto">
+<ComingEvent/>
+<ComingEvent/>
+<ComingEvent/>
+<ComingEvent/>
+
+</MDBRow>
 
 
 

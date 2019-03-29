@@ -5,7 +5,7 @@ import playstore from './icons/playstore.svg'
 import appstore from './icons/appstore.svg'
 const Footer = props => {
   return (
-      <div>
+      <div style={{marginTop:50}}>
     <MDBTable className="pl-2 text-center unique-color-dark white-text" borderless>
 
       <MDBTableHead>
