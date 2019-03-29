@@ -24,11 +24,12 @@ import CountryCard from './sub-view/country-card';
 import just from './icons/just.svg'
 import poly from './icons/شعار_جامعة_البلقاء_التطبيقية.svg'
 import LOGO_FOOTER from './icons/LOGO_FOOTER.svg'
-import psut from './icons/logo-en.svg'
-import logo from './icons/logo.svg'
-import india from './icons/Group8309.png'
-import flag from './icons/flag.svg'
+import psut from './icons/logo-en.svg';
+import logo from './icons/logo.svg';
+import india from './icons/Group8309.png';
+import flag from './icons/flag.svg';
 import BackgroundImage from 'react-background-image-loader';
+import Icons from './icons';
 
  
 
@@ -73,10 +74,21 @@ const uniCardData  = [
 ];
 const countryItems = [
 
-  {url :india},
-  {url :india},
-  {url :india},
-  {url :india}
+  {url :Icons.Britsh,
+  flag : Icons.BritshFlag,
+title:"بريطانيا"},
+{url :Icons.Britsh,
+  flag : Icons.BritshFlag,
+title:"بريطانيا"},
+{url :Icons.Britsh,
+  flag : Icons.BritshFlag,
+title:"بريطانيا"},
+{url :Icons.Britsh,
+  flag : Icons.BritshFlag,
+title:"بريطانيا"},
+{url :Icons.Britsh,
+  flag : Icons.BritshFlag,
+title:"بريطانيا"},
  
 ];
 class App extends Component {
@@ -150,8 +162,8 @@ class App extends Component {
        </MDBRow>
      
        
-<MDBRow className="w-auto align-right">
-<MDBCol md="6"></MDBCol>
+<MDBRow className="align-right w">
+
 
 <span style={{margin:20}}>أكثر التخصصات ظهوراً في نتائج البحث</span>
 <img  src={image2}></img>
@@ -209,8 +221,8 @@ class App extends Component {
              
 
 
-            <MDBRow className="w-auto align-right">
-<MDBCol md="6"></MDBCol>
+            <MDBRow className="align-right w">
+
 
 <span style={{margin:20}}>أكثر الجامعات ظهوراً في نتائج البحث</span>
 <img  src={UniImage}></img>
@@ -223,15 +235,15 @@ class App extends Component {
 
 
 
-<MDBRow className="w-auto align-right">
-<MDBCol md="6"></MDBCol>
+<MDBRow className="align-right w">
+
 
 <span style={{margin:20}}>أكثر البلدان ظهوراً في نتائج البحث</span>
 <img  src={flag}></img>
 
 </MDBRow>
 <div class="block-line"></div>
-<MDBRow className="w-auto box-container uni">
+<MDBRow className="w-auto box-container country">
 <DrawCountry/>
 </MDBRow>
 

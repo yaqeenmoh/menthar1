@@ -10,9 +10,10 @@ const CountryCard = (d) => {
 
 const style = {
     background: "url("+d.data.url+")",
-    width:273.5,
+    width:200,
     height:350,
-    position:"relative"
+    position:"relative",
+    backgroundSize :"200px 350px"
 }
 
 
@@ -21,7 +22,12 @@ const style = {
     <MDBCol md="2">
    
         <div style={style}>
-        {/* <img className="country-shadow" src={Shadow}/> */}
+        <img className="flag" src={d.data.flag}/>
+        <span className="flag-title">{d.data.title}</span>
+        <div className="grad">
+
+        
+        </div>
 
         </div>
 
