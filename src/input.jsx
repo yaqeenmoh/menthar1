@@ -30,7 +30,7 @@ export default class Input extends Component {
 
 <form onSubmit={this.handleSubmit}>
 <label>هل تبحث عن تخصص معين
-<input
+<input type="search"
          placeholder="بحث عن تخصص حسب"
          ref={input => this.search = input}
          onChange={this.handleInputChange}
