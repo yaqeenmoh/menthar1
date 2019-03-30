@@ -78,7 +78,17 @@ class RightSideBar extends Component{
 
 			</Nav>
 			
-		
+			<Nav className="nav-item" id="4"> القبولات الجامعية-محركات البحث
+			<img src={groupIcon} className="m-1"></img> 
+			<Nav className="nav-item" className="nav-item" id="4_1">
+			
+		</Nav>
+			<Nav id="3_2"></Nav>
+			
+			
+
+			</Nav>
+			
         </SideNav>
            
 			</div>)

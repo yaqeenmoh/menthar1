@@ -8,9 +8,9 @@ const Footer = props => {
       <div style={{marginTop:50}}>
     <MDBTable className="pl-2 text-center unique-color-dark white-text" borderless>
 
-      <MDBTableHead>
-        <tr>
-        <th>من نحن</th>
+      <MDBTableHead >
+        <tr className="bold">
+        <th >من نحن</th>
             <th>من نحن</th>
             
             <th>الدعم</th>

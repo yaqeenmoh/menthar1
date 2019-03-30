@@ -504,3 +504,8 @@ a {
   text-decoration: none;
   background-color: transparent;
 }
+.bold{
+
+  font-weight: bold;
+  font-size:larger;
+}
