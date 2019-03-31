@@ -307,9 +307,9 @@ class App extends Component {
 
 <div class="block-line"></div>
 <MDBRow style={{marginBottom:400}} className="w-auto">
-<Event/>
-<Event/>
-<Event/>
+<Event margin={70}/>
+<Event margin={80}/>
+
 
 </MDBRow>
 
@@ -327,7 +327,7 @@ class App extends Component {
 <ComingEvent/>
 <ComingEvent/>
 <ComingEvent/>
-<ComingEvent/>
+
 
 </MDBRow>
 

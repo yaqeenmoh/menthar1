@@ -49,12 +49,16 @@ direction: rtl;
  
 }
 .w {
-  width: 1350px;
+  width: 80%;
 }
 .sidemenu-right{
   position: absolute;
   right :0;
+  z-index:999999;
 
+}
+.footer{
+  z-index:9999999999999;
 }
 .menu-block {
   width: 329px;
@@ -71,8 +75,8 @@ box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.16);
   -webkit-box-shadow: -8px -1px 5px 0px rgba(196,194,196,1);
 -moz-box-shadow: -8px -1px 5px 0px rgba(196,194,196,1);
 box-shadow: -8px -1px 5px 0px rgba(196,194,196,1);
-width:230px;
-height:4000px;
+width:170px;
+height:3650px;
 }
 .block-line{
   height: 30px;
@@ -114,8 +118,8 @@ color: #8d8e8e;
 
 
 
-  width: 100px;
-height: 100px;
+  width: 70px;
+height: 80px;
 border-radius: 10px;
 background: #034173;
 padding-top: 18%;
@@ -263,13 +267,17 @@ background-repeat: no-repeat;
     /* margin-right:25% !important; */
     margin-left:0;
     margin-right:0;
+    /* padding-right:0px  !important; 
+    padding-left:0px  !important;  */
+  
   }
-  .country{
+  /* .country{
     margin-left:20px !important;
-  }
+  } */
   .w span {
     margin-left: auto !important;
   }
+  
 
   .grad{
     width:200px;
@@ -508,4 +516,55 @@ a {
 
   font-weight: bold;
   font-size:larger;
+}
+.link{
+
+
+  font-family: "Noto Kufi Arabic";
+font-weight: normal;
+font-size: 16px;
+text-align: right;
+color: #034173;
+border: 0.7px solid #034173;
+
+}
+.slideNav {
+  text-align: right;
+  margin-top:20px;
+}
+.slideNav a {
+  color :#007bff !important;
+}
+.backtojo{
+  font-size: 10pt;
+}
+.menu-container{
+    margin-left:20px;
+}
+.menu-container ul li {
+  list-style-type: none;
+  color:black;
+  padding-bottom: 10px;
+  margin-top:5px;
+  
+}
+.menu2{
+  margin-top:20px;
+}
+.arrow-ref{
+  position: absolute;
+  left:0;
+  margin-left:10px;
+}
+.menu3{
+  margin-top: 20px;
+}
+.other-rows{
+  font-size: 10pt;
+}
+.other-rows div{
+margin-top:20px;
+}
+.other-rows div a{
+  margin-right:10px;
 }

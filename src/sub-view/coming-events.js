@@ -23,7 +23,7 @@ const ComingEvent = (d) => {
 
 
   return (
-    <MDBCol md="2" style={{marginLeft:50}}>
+    <MDBCol md="2" style={{marginLeft:80}}>
    <div className="mnhaj">
    <div className="top">
    <div className="uni-part2">

@@ -10,12 +10,68 @@ import conversation from './icons/conversation.svg';
 import telescope from './icons/telescope (2).svg';
 import Ellipse from './icons/Ellipse 9.svg';
 import Group2 from './icons/Group 8312.svg';
-
-
+import Book from './icons/other/book.svg'
+import ArrowCircle from './icons/other/arrow-circle.png';
+import {Collapse} from 'react-bootstrap'
+import Innovation from './icons/other/innovation.svg';
+import Videolecture from './icons/other/video-lecture.svg';
+import Research from './icons/other/research.svg';
+import Newspaper from './icons/other/newspaper.svg';
+import Event from './icons/other/event.svg';
 
 
 class RightSideBar extends Component{
+isOpen = false;
+isOpen2 = false;
+isOpen3 = false;
+	constructor(props){
+super(props)
+this.state = {open : false , open2 : false , open3 : false};
+	}
 
+	openMenu = ()=>{
+		const app = this;
+		if(!app.isOpen)
+		{
+			app.setState({open:true});
+
+
+		}
+		else{
+			app.setState({open : false});
+		}
+
+		app.isOpen = !app.isOpen;
+	}
+
+	openMenu2 = ()=>{
+		const app = this;
+		if(!app.isOpen2)
+		{
+			app.setState({open2:true});
+
+
+		}
+		else{
+			app.setState({open2 : false});
+		}
+
+		app.isOpen2 = !app.isOpen2;
+	}
+	openMenu3 = ()=>{
+		const app = this;
+		if(!app.isOpen3)
+		{
+			app.setState({open3:true});
+
+
+		}
+		else{
+			app.setState({open3 : false});
+		}
+
+		app.isOpen3 = !app.isOpen3;
+	}
 	render (){
         return (
 		
@@ -23,74 +79,95 @@ class RightSideBar extends Component{
 
 		<div className="sidemenu-right menu-right">
 		<br/>
-		<div className="row" style={{width:250 , overFlow:"hidden" , marginLeft:0 , height:50  ,backgroundColor:"#F8F8F8"  , lineHeight:3 , marginBottom:15}}>
+		<div className="row" style={{width:200 , overFlow:"hidden" , marginLeft:0 , height:50  ,backgroundColor:"#F8F8F8"  , lineHeight:3 , marginBottom:15}}>
 		
 		<div className="col-md-3">
 		<img src={groupIcon} className="m-1"></img>
 		</div>
-		<div className="col-md-9" >
-				<p style={{color:"black"}}>العودة إلى جو أكادمي</p>
+		<div className="col-md-9">
+				<p style={{color:"black"}} className="backtojo">العودة إلى جو أكادمي</p>
 				
 				</div>
 				</div>
 				<div className="row">
-				<div className="col-md-5" >
+				<div className="col-md-4"  >
 				<GalleryCard2 data={{Imgurl :conversation,text :"شبابيك"  }}/>
 				</div>
-				<div className="col-md-5" >
+				<div className="col-md-4" style={{marginRight:20}}>
 				<GalleryCard2 data={{Imgurl :telescope,text :"منظار"  }}/>
 				</div>
 				</div>
-           <SideNav className="slideNav"  defaultSelectedPath="1">
-		   
-            
-			<Nav className="nav-item" id="1"  >الموسوعة
-			
-			
-			
-			
-			<Nav className="nav-item" className="nav-item" id="1_1">
-			
-		
-			 بلدان</Nav>
-			<Nav id="1_2">جامعات</Nav>
-			<Nav className="nav-item" id="1_3">تخصصات</Nav>
+     <div className="slideNav">
+	 <div className="menu1">
+	 <img src={Book} />
+	 <a href="javascript:void(0);" style={{marginRight:10}}>
+	 
+	 الموسوعة
+	 </a>
+	 <a className="arrow-ref" href="javascript:void(0);" onClick={this.openMenu}><img src={ArrowCircle} style={{cursor:"pointer"}} /></a>
+	<Collapse in={this.state.open}>
+	 <div className="menu-container">
+		 <ul>
+		 <li><a href="javascript:void(0);">بلدان</a></li>
+		 <li><a href="javascript:void(0);">جامعات</a></li>
+		 <li><a href="javascript:void(0);">تخصصات</a></li>
+		 </ul>
+	 </div>
+	 </Collapse>
+		 </div>
+		 <div className="menu2">
+	 <img src={Innovation} />
+	 <a href="javascript:void(0);" style={{marginRight:10}}>
+	 
+	 المناهج
+	 </a>
+	 <a className="arrow-ref" href="javascript:void(0);" onClick={this.openMenu2}><img src={ArrowCircle} style={{cursor:"pointer"}} /></a>
+	<Collapse in={this.state.open2}>
+	 <div className="menu-container">
+		 <ul>
+		 <li><a href="javascript:void(0);">دورات</a></li>
+		 <li><a href="javascript:void(0);">ملفات</a></li>
+		 <li><a href="javascript:void(0);">فيديوهات</a></li>
+		 </ul>
+	 </div>
+	 </Collapse>
+		 </div>
 
-			</Nav>
-        
-			<Nav className="nav-item" id="2">المناهج
-			<Nav className="nav-item" className="nav-item" id="2_1">
-			
-		
-			 دورات</Nav>
-			<Nav id="2_2">ملفات </Nav>
-			<Nav className="nav-item" id="2_3">فيديوهات</Nav>
+		 <div className="menu3">
+	 <img src={Videolecture} />
+	 <a href="javascript:void(0);" style={{marginRight:10}}>
+	 
+	 الأدوات
+	 </a>
+	 <a className="arrow-ref" href="javascript:void(0);" onClick={this.openMenu3}><img src={ArrowCircle} style={{cursor:"pointer"}} /></a>
+	<Collapse in={this.state.open3}>
+	 <div className="menu-container">
+		 <ul>
+		 <li><a href="javascript:void(0);">إحسب معدلي</a></li>
+		 <li><a href="javascript:void(0);">شخصيتي</a></li>
+		 </ul>
+	 </div>
+	 </Collapse>
+		 </div>
 
-			</Nav>
+		 <div className="other-rows" style={{marginTop:30}}>
+		 
+			<div>
+		 <img src={Research}/>
+		 <a>القبولات الجامعية-محرك البحث</a>
+		 </div>
+		 <div>
+		 <img src={Newspaper}/>
+		 <a>المدونة والأخبار</a>
+		 </div>
+		 <div>
+		 <img src={Event}/>
+		<a>الفعاليات</a>
+		 </div>
 		
-			<Nav className="nav-item" id="3">الأدوات
-			<Nav className="nav-item" className="nav-item" id="3_1">
-			
-		
-			 احسب معدلي</Nav>
-			<Nav id="3_2">شخصيتي</Nav>
-			
-
-			</Nav>
-			
-			<Nav className="nav-item" id="4"> القبولات الجامعية-محركات البحث
-			<img src={groupIcon} className="m-1"></img> 
-			<Nav className="nav-item" className="nav-item" id="4_1">
-			
-		</Nav>
-			<Nav id="3_2"></Nav>
-			
-			
-
-			</Nav>
-			
-        </SideNav>
-           
+		 
+		 </div>
+           </div>
 			</div>)
 	};
 }

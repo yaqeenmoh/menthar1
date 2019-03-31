@@ -14,7 +14,7 @@ const Event = (d) => {
 
 
   return (
-    <MDBCol md="3" style={{margin:25}}>
+    <MDBCol md="3" style={{margin:25 , marginLeft : d.margin }}>
 
     <div className="event-pic">
     <img src={Pic}/>
